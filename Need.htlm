@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NextGen AI Studios</title>
+  <style>
+    body {
+      background-color: #0b0f19;
+      color: #00ffcc;
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    .menu-cubugu {
+      background-color: #111726;
+      border-bottom: 2px solid #00ffcc;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      box-shadow: 0 4px 20px rgba(0, 255, 204, 0.3);
+    }
+    .logo-alani {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .sirket-amblemi {
+      background: linear-gradient(45deg, #00ffcc, #ff007f);
+      width: 24px;
+      height: 24px;
+      border-radius: 6px;
+      box-shadow: 0 0 10px #00ffcc;
+    }
+    .sirket-logosu {
+      color: #00ffcc;
+      font-weight: bold;
+      font-size: 22px;
+      letter-spacing: 1px;
+    }
+    .menu-linkleri a {
+      color: #ffffff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 15px;
+      font-weight: 500;
+      cursor: pointer;
+    }
+    .menu-linkleri a:hover {
+      color: #ff007f;
+      text-shadow: 0 0 10px #ff007f;
+    }
+    .icerik-alani {
+      padding: 60px 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    h1 {
+      color: #00ffcc;
+      font-size: 36px;
+      margin-bottom: 10px;
+      text-shadow: 0 0 10px rgba(0, 255, 204, 0.2);
+    }
+    .slogan {
+      color: #ffffff;
+      font-size: 18px;
+      margin-bottom: 40px;
+    }
+    .form-kutusu {
+      background-color: #222;
+      border: 2px solid #00ffcc;
+      padding: 30px;
+      width: 300px;
+      margin: 0 auto;
+      border-radius: 15px;
+      box-shadow: 0 0 15px #00ffcc;
+    }
+    .form-kutusu h3 {
+      color: #ff007f;
+      margin-top: 0;
+      font-size: 20px;
+    }
+    input {
+      width: 90%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #00ffcc;
+      background-color: #333;
+      color: white;
+      text-align: center;
+    }
+    button {
+      background-color: #ff007f;
+      color: white;
+      padding: 12px 25px;
+      font-size: 16px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-top: 15px;
+      width: 100%;
+      box-shadow: 0 0 10px #ff007f;
+    }
+    .sifre-kutusu {
+      background-color: #222;
+      border: 2px solid #ff007f;
+      padding: 30px;
+      width: 300px;
+      margin: 40px auto 0 auto;
+      border-radius: 15px;
+      box-shadow: 0 0 15px #ff007f;
+    }
+    .sifre-kutusu h3 {
+      color: #ff007f;
+      margin-top: 0;
+    }
+    .sifre-kutusu button {
+      background-color: #00ffcc;
+      color: #111;
+      font-weight: bold;
+      box-shadow: 0 0 10px #00ffcc;
+    }
+    .gizli-mesaj {
+      display: none;
+      margin-top: 20px;
+      padding: 15px;
+      background-color: #00ffcc;
+      color: #111;
+      font-weight: bold;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="menu-cubugu">
+    <div class="logo-alani">
+      <div class="sirket-amblemi"></div>
+      <div class="sirket-logosu">NextGen</div>
+    </div>
+    <div class="menu-linkleri">
+      <a onclick="alert('Ana Sayfadasınız!')">Ana Sayfa</a>
+      <a onclick="alert('Müşteri Kayıt Alanındasınız.')">Kayıt Ol</a>
+      <a onclick="alert('Yönetici Giriş Paneli aşağıdadır.')">CEO Giriş</a>
+    </div>
+  </div>
+
+  <div class="icerik-alani">
+    <h1>Geleceğin Yazılım Dünyası</h1>
+    <p class="slogan">NextGen ile oyun ve yapay zeka fikirlerinizi kodla gerçeğe dönüştürüyoruz.</p>
+    
+    <div class="form-kutusu">
+      <h3>Bizimle Çalışın</h3>
+      <input type="text" id="isim" placeholder="Adınız Soyadınız">
+      <input type="email" id="eposta" placeholder="E-posta Adresiniz">
+      <button onclick="kaydet()">Kayıt Ol</button>
+    </div>
+
+    <div class="sifre-kutusu">
+      <h3>🔒 Kurucu Özel Paneli</h3>
+      <input type="password" id="sifreGiris" placeholder="Yönetici Şifresi">
+      <button onclick="sifreyiKontrolEt()">Sisteme Giriş Yap</button>
+      <div id="gizliKutu" class="gizli-mesaj">
+        🎉 HOŞ GELDİNİZ CEO! <br><br>
+        18 yaşında atacağın büyük adımların temeli burada atılıyor. Asla pes etme! 🚀
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function kaydet() {
+      let isimVerisi = document.getElementById('isim').value;
+      let epostaVerisi = document.getElementById('eposta').value;
+      if(isimVerisi == "" || epostaVerisi == "") {
+        alert("Lütfen tüm alanları doldurun!");
+      } else {
+        alert("Teşekkürler " + isimVerisi + "! Kaydınız başarıyla alındı. Sizinle " + epostaVerisi + " üzerinden iletişime geçeceğiz.");
+      }
+    }
+
+    function sifreyiKontrolEt() {
+      let girilenSifre = document.getElementById('sifreGiris').value;
+      if(girilenSifre == "2026") {
+        document.getElementById('gizliKutu').style.display = "block";
+        alert("Giriş Başarılı, Sayın Yönetici!");
+      } else {
+        document.getElementById('gizliKutu').style.display = "none";
+        alert("Hatalı Şifre! ❌");
+      }
+    }
+  </script>
+
+</body>
+</html>
+
+  
