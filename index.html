@@ -3,7 +3,6 @@
 <head>
   <title>NextGen AI Studios</title>
   <style>
-    /* Canlı ve Derin Neon Gece Arka Planı */
     body {
       background-color: #0b0f19;
       color: #00ffcc;
@@ -12,8 +11,6 @@
       padding: 0;
       text-align: center;
     }
-
-    /* Üst Menü Çubuğu */
     .menu-cubugu {
       background-color: #111726;
       border-bottom: 2px solid #00ffcc;
@@ -24,8 +21,8 @@
       justify-content: space-around;
       align-items: center;
       box-shadow: 0 4px 20px rgba(0, 255, 204, 0.3);
+      z-index: 100;
     }
-    
     .logo-alani {
       display: flex;
       align-items: center;
@@ -44,8 +41,6 @@
       font-size: 22px;
       letter-spacing: 1px;
     }
-
-    /* 🌐 DİL BUTONLARI STİLİ */
     .dil-secici button {
       background: none;
       border: 1px solid #00ffcc;
@@ -63,8 +58,6 @@
       color: #111726;
       box-shadow: 0 0 10px #00ffcc;
     }
-
-    /* İçerik Alanı */
     .icerik-alani {
       padding: 60px 20px;
       max-width: 800px;
@@ -81,14 +74,64 @@
       font-size: 18px;
       margin-bottom: 40px;
     }
-
-    /* Parlayan Kayıt Formu Kutusu */
+    .vizyon-bolumu {
+      background-color: #111726;
+      border: 1px solid #00ffcc;
+      padding: 25px;
+      border-radius: 15px;
+      margin: 30px auto;
+      text-align: left;
+      line-height: 1.6;
+      box-shadow: 0 4px 15px rgba(0, 255, 204, 0.1);
+    }
+    .vizyon-bolumu h2 {
+      color: #ff007f;
+      margin-top: 0;
+      font-size: 22px;
+      border-bottom: 1px solid #ff007f;
+      padding-bottom: 5px;
+    }
+    .vizyon-bolumu p {
+      color: #ffffff;
+      font-size: 15px;
+    }
+    .kart-kutusu {
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+      margin: 40px 0;
+    }
+    .kart {
+      background-color: #161d30;
+      border: 1px solid #1f293d;
+      padding: 20px;
+      border-radius: 12px;
+      flex: 1;
+      transition: 0.3s;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+    .kart:hover {
+      border-color: #00ffcc;
+      transform: translateY(-5px);
+      box-shadow: 0 0 15px rgba(0, 255, 204, 0.2);
+    }
+    .kart h4 {
+      color: #ff007f;
+      margin: 0 0 10px 0;
+      font-size: 18px;
+    }
+    .kart p {
+      color: #9ca3af;
+      font-size: 13px;
+      margin: 0;
+      line-height: 1.4;
+    }
     .form-kutusu {
       background-color: #222;
       border: 2px solid #00ffcc;
       padding: 30px;
-      width: 300px;
-      margin: 0 auto;
+      width: 320px;
+      margin: 40px auto;
       border-radius: 15px;
       box-shadow: 0 0 15px #00ffcc;
     }
@@ -118,14 +161,13 @@
       margin-top: 15px;
       width: 100%;
       box-shadow: 0 0 10px #ff007f;
+      font-weight: bold;
     }
-
-    /* Şifre Paneli */
     .sifre-kutusu {
       background-color: #222;
       border: 2px solid #ff007f;
       padding: 30px;
-      width: 300px;
+      width: 320px;
       margin: 40px auto 0 auto;
       border-radius: 15px;
       box-shadow: 0 0 15px #ff007f;
@@ -150,7 +192,6 @@
       width: 100%;
       box-shadow: 0 0 10px #00ffcc;
     }
-
     .gizli-mesaj {
       display: none;
       margin-top: 20px;
@@ -164,14 +205,11 @@
 </head>
 <body>
 
-  <!-- 🌐 MENÜ ÇUBUĞU -->
   <div class="menu-cubugu">
     <div class="logo-alani">
       <div class="sirket-amblemi"></div>
       <div class="sirket-logosu">NextGen</div>
     </div>
-    
-    <!-- 🌐 DİL BUTONLARI BURADA -->
     <div class="dil-secici">
       <button id="btn-tr" class="aktif" onclick="diliDegistir('tr')">TR</button>
       <button id="btn-de" onclick="diliDegistir('de')">DE</button>
@@ -183,7 +221,31 @@
     <h1 id="txt-baslik">Geleceğin Yazılım Dünyası</h1>
     <p id="txt-slogan" class="slogan">NextGen ile oyun ve yapay zeka fikirlerinizi kodla gerçeğe dönüştürüyoruz.</p>
     
-    <!-- KAYIT FORMU -->
+    <div class="kart-kutusu">
+      <div class="kart">
+        <h4 id="lbl-web-baslik">🌐 Web</h4>
+        <p id="lbl-web-desc">Modern, hızlı ve güvenli web mimarileri inşa ediyoruz.</p>
+      </div>
+      <div class="kart">
+        <h4 id="lbl-app-baslik">📱 Mobil</h4>
+        <p id="lbl-app-desc">iOS ve Android için kusursuz uygulamalar üretiyoruz.</p>
+      </div>
+      <div class="kart">
+        <h4 id="lbl-game-baslik">🎮 Oyun</h4>
+        <p id="lbl-game-desc">Gelecek nesil, sürükleyici oyun dünyaları tasarlıyoruz.</p>
+      </div>
+    </div>
+
+    <div class="vizyon-bolumu">
+      <h2 id="txt-neyapiyoruz-baslik">Ne Yapıyoruz?</h2>
+      <p id="txt-neyapiyoruz-icerik">NextGen AI Studios olarak, dijital dünyanın sınırlarını yeniden çiziyoruz. Gelişmiş yapay zeka entegrasyonları, yüksek performanslı web mimarileri ve kullanıcıyı içine çeken mobil oyun ekosistemleri geliştiriyoruz. Fikirleri sadece koda dökmüyor, onlara küresel ölçekte değer katıyoruz.</p>
+    </div>
+
+    <div class="vizyon-bolumu">
+      <h2 id="txt-gelecek-baslik">Gelecekte Bizi Ne Bekliyor?</h2>
+      <p id="txt-gelecek-icerik">Gelecek, yapay zeka ile insan zekasının kusursuz uyumu üzerine kurulacak. NextGen olarak hedefimiz; yapay zeka tabanlı otomasyon sistemleri ve sınırları zorlayan fütüristik yazılım çözümleriyle sektöre liderlik etmek. Yarının teknolojisini bugünden inşa ediyor, küresel pazarda kalıcı izler bırakmayı hedefliyoruz.</p>
+    </div>
+
     <div class="form-kutusu">
       <h3 id="txt-form-baslik">Bizimle Çalışın</h3>
       <input type="text" id="isim" placeholder="Adınız Soyadınız">
@@ -191,7 +253,6 @@
       <button id="txt-form-buton" class="ana-buton" onclick="kaydet()">Kayıt Ol</button>
     </div>
 
-    <!-- GIZLI PANEL -->
     <div class="sifre-kutusu">
       <h3 id="txt-panel-baslik">🔒 Kurucu Özel Paneli</h3>
       <input type="password" id="sifreGiris" placeholder="Yönetici Şifresi">
@@ -204,11 +265,20 @@
   </div>
 
   <script>
-    // 🧠 TÜM CÜMLELERİN ALMANCA VE İNGİLİZCE KARŞILIKLARI
     const sözlük = {
       tr: {
         baslik: "Geleceğin Yazılım Dünyası",
         slogan: "NextGen ile oyun ve yapay zeka fikirlerinizi kodla gerçeğe dönüştürüyoruz.",
+        webBaslik: "🌐 Web",
+        webDesc: "Modern, hızlı ve güvenli web mimarileri inşa ediyoruz.",
+        appBaslik: "📱 Mobil",
+        appDesc: "iOS ve Android için kusursuz uygulamalar üreliyoruz.",
+        gameBaslik: "🎮 Oyun",
+        gameDesc: "Gelecek nesil, sürükleyici oyun dünyaları tasarlıyoruz.",
+        nyBaslik: "Ne Yapıyoruz?",
+        nyIcerik: "NextGen AI Studios olarak, dijital dünyanın sınırlarını yeniden çiziyoruz. Gelişmiş yapay zeka entegrasyonları, yüksek performanslı web mimarileri ve kullanıcıyı içine çeken mobil oyun ekosistemleri geliştiriyoruz. Fikirleri sadece koda dökmüyor, onlara küresel ölçekte değer katıyoruz.",
+        glBaslik: "Gelecekte Bizi Ne Bekliyor?",
+        glIcerik: "Gelecek, yapay zeka ile insan zekasının kusursuz uyumu üzerine kurulacak. NextGen olarak hedefimiz; yapay zeka tabanlı otomasyon sistemleri ve sınırları zorlayan fütüristik yazılım çözümleriyle sektöre liderlik etmek. Yarının teknolojisini bugünden inşa ediyor, küresel pazarda kalıcı izler bırakmayı hedefliyoruz.",
         formBaslik: "Bizimle Çalışın",
         formButon: "Kayıt Ol",
         panelBaslik: "🔒 Kurucu Özel Paneli",
@@ -222,85 +292,11 @@
       de: {
         baslik: "Die Softwarewelt der Zukunft",
         slogan: "Mit NextGen verwandeln wir Ihre Spiel- und KI-Ideen in Code.",
-        formBaslik: "Arbeiten Sie mit uns",
-        formButon: "Registrieren",
-        panelBaslik: "🔒 Gründer-Sonderpanel",
-        panelButon: "Einloggen",
-        bosHata: "Bitte füllen Sie alle Felder aus!",
-        tsekkur: "Vielen Dank ",
-        kayitBasari: "! Ihre Registrierung war erfolgreich. Wir werden uns melden.",
-        sifreBasari: "Login erfolgreich, Herr Geschäftsführer!",
-        sifreHata: "Falsches Passwort! ❌"
-      },
-      en: {
-        baslik: "The Software World of the Future",
-        slogan: "With NextGen, we turn your game and AI ideas into code.",
-        formBaslik: "Work With Us",
-        formButon: "Sign Up",
-        panelBaslik: "🔒 Founder Special Panel",
-        panelButon: "Log In",
-        bosHata: "Please fill in all fields!",
-        tsekkur: "Thank you ",
-        kayitBasari: "! Your registration was successful. We will contact you.",
-        sifreBasari: "Login Successful, Welcome CEO!",
-        sifreHata: "Incorrect Password! ❌"
-      }
-    };
-
-    let aktifDil = 'tr';
-
-    function diliDegistir(dil) {
-      aktifDil = dil;
-      document.getElementById('txt-baslik').innerText = sözlük[dil].baslik;
-      document.getElementById('txt-slogan').innerText = sözlük[dil].slogan;
-      document.getElementById('txt-form-baslik').innerText = sözlük[dil].formBaslik;
-      document.getElementById('txt-form-buton').innerText = sözlük[dil].formButon;
-      document.getElementById('txt-panel-baslik').innerText = sözlük[dil].panelBaslik;
-      document.getElementById('txt-panel-buton').innerText = sözlük[dil].panelButon;
-
-      // İsim ve Eposta kutularının içindeki silik yazıları (placeholder) değiştirme
-      if(dil == 'de') {
-        document.getElementById('isim').placeholder = "Ihr Name";
-        document.getElementById('eposta').placeholder = "E-Mail Adresse";
-        document.getElementById('sifreGiris').placeholder = "Admin-Passwort";
-      } else if(dil == 'en') {
-        document.getElementById('isim').placeholder = "Your Name";
-        document.getElementById('eposta').placeholder = "Email Address";
-        document.getElementById('sifreGiris').placeholder = "Admin Password";
-      } else {
-        document.getElementById('isim').placeholder = "Adınız Soyadınız";
-        document.getElementById('eposta').placeholder = "E-posta Adresiniz";
-        document.getElementById('sifreGiris').placeholder = "Yönetici Şifresi";
-      }
-
-      document.getElementById('btn-tr').classList.remove('aktif');
-      document.getElementById('btn-de').classList.remove('aktif');
-      document.getElementById('btn-en').classList.remove('aktif');
-      document.getElementById('btn-' + dil).classList.add('aktif');
-    }
-
-    function kaydet() {
-      let isimVerisi = document.getElementById('isim').value;
-      let epostaVerisi = document.getElementById('eposta').value;
-
-      if(isimVerisi == "" || epostaVerisi == "") {
-        alert(sözlük[aktifDil].bosHata);
-      } else {
-        alert(sözlük[aktifDil].tsekkur + isimVerisi + sözlük[aktifDil].kayitBasari);
-      }
-    }
-
-    function sifreyiKontrolEt() {
-      let girilenSifre = document.getElementById('sifreGiris').value;
-      if(girilenSifre == "2026") {
-        document.getElementById('gizliKutu').style.display = "block";
-        alert(sözlük[aktifDil].sifreBasari);
-      } else {
-        document.getElementById('gizliKutu').style.display = "none";
-        alert(sözlük[aktifDil].sifreHata);
-      }
-    }
-  </script>
-
-</body>
-</html>
+        webBaslik: "🌐 Web",
+        webDesc: "Wir bauen moderne, schnelle und sichere Webarchitekturen.",
+        appBaslik: "📱 Mobil",
+        appDesc: "Wir erstellen nahtlose Apps für iOS und Android.",
+        gameBaslik: "🎮 Spiele",
+        gameDesc: "Wir entwerfen immersive Spielewelten der nächsten Generation.",
+        nyBaslik: "Was wir tun?",
+        nyIcerik: "Als NextGen AI Studios definieren wir die Grenzen der digitalen Welt neu. Wir entwickeln fortschrittliche KI-Integrationen, leistungsstarke Web-Architekturen und immersive mobile Spiele-Ökosysteme. Wir verwandeln Ideen nicht nur in Code, sondern schaffen globalen Mehrwert.",
