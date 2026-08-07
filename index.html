@@ -279,3 +279,107 @@
         nyB: "What We Do?", nyI: "At NextGen AI Studios, we redefine the boundaries of the digital world. We develop advanced AI integrations, high-performance web architectures, and immersive mobile gaming ecosystems. We don't just turn ideas into code; we engineer global value.",
 glB: "What Awaits Us in the Future?", glI: "The future is built on the seamless harmony between AI and human intelligence. Our goal at NextGen is to lead the industry with AI-driven automation systems and pioneering software solutions. We are building tomorrow's technology today, aiming to leave a permanent mark on the global market.",fB: "Work With Us", fBt: "Sign Up", pB: "🔒 Founder Special Panel", pBt: "Log In"}};var activeLang = 'tr';function bm(langCode) {activeLang = langCode;document.getElementById('t-b').innerText = s[langCode].b;document.getElementById('t-s').innerText = s[langCode].sl;document.getElementById('c-wB').innerText = s[langCode].wB;document.getElementById('c-wD').innerText = s[langCode].wD;document.getElementById('c-mB').innerText = s[langCode].mB;document.getElementById('c-mD').innerText = s[langCode].mD;document.getElementById('c-gB').innerText = s[langCode].gB;document.getElementById('c-gD').innerText = s[langCode].gD;document.getElementById('t-nyB').innerText = s[langCode].nyB;document.getElementById('t-nyI').innerText = s[langCode].nyI;document.getElementById('t-glB').innerText = s[langCode].glB;document.getElementById('t-glI').innerText = s[langCode].glI;document.getElementById('t-fB').innerText = s[langCode].fB;document.getElementById('t-fBt').innerText = s[langCode].fBt;document.getElementById('t-pB').innerText = s[langCode].pB;document.getElementById('t-pBt').innerText = s[langCode].pBt;if(langCode == 'de') {document.getElementById('isim').placeholder = "Ihr Name";document.getElementById('eposta').placeholder = "E-Mail Adresse";document.getElementById('sifreGiris').placeholder = "Admin-Passwort";} else if(langCode == 'en') {document.getElementById('isim').placeholder = "Your Name";document.getElementById('eposta').placeholder = "Email Address";document.getElementById('sifreGiris').placeholder = "Admin Password";} else {document.getElementById('isim').placeholder = "Adınız Soyadınız";document.getElementById('eposta').placeholder = "E-posta Adresiniz";document.getElementById('sifreGiris').placeholder = "Yönetici Şifresi";}document.getElementById('btn-tr').className = langCode == 'tr' ? 'aktif' : '';document.getElementById('btn-de').className = langCode == 'de' ? 'aktif' : '';document.getElementById('btn-en').className = langCode == 'en' ? 'aktif' : '';}function save() {var i = document.getElementById('isim').value;var e = document.getElementById('eposta').value;if(i == "" || e == "") {alert(activeLang=='de'?'Bitte ausfüllen!':(activeLang=='en'?'Please fill all fields!':'Lütfen tüm alanları doldurun!'));} else {alert((activeLang=='de'?'Vielen Dank ': (activeLang=='en'?'Thank you ':'Teşekkürler ')) + i);}}function check() {var g = document.getElementById('sifreGiris').value;if(g == "2026") {document.getElementById('gizliKutu').style.display = "block";alert(activeLang=='de'?'Erfolgreich!':(activeLang=='en'?'Success!':'Giriş Başarılı!'));} else {document.getElementById('gizliKutu').style.display = "none";alert('❌');}}
 nyB: "What We Do?", nyI: "At NextGen AI Studios, we redefine the boundaries of the digital world. We develop advanced AI integrations, high-performance web architectures, and immersive mobile gaming ecosystems. We don't just turn ideas into code; we engineer global value.",glB: "What Awaits Us in the Future?", glI: "The future is built on the seamless harmony between AI and human intelligence. Our goal at NextGen is to lead the industry with AI-driven automation systems and pioneering software solutions. We are building tomorrow's technology today, aiming to leave a permanent mark on the global market.",fB: "Work With Us", fBt: "Sign Up", pB: "🔒 Founder Special Panel", pBt: "Log In"}};var lang = 'tr';function dl(d) {lang = d;document.getElementById('t-b').innerText = data[d].b;document.getElementById('t-s').innerText = data[d].sl;document.getElementById('c-wB').innerText = data[d].wB;document.getElementById('c-wD').innerText = data[d].wD;document.getElementById('c-mB').innerText = data[d].mB;document.getElementById('c-mD').innerText = data[d].mD;document.getElementById('c-gB').innerText = data[d].gB;document.getElementById('c-gD').innerText = data[d].gD;document.getElementById('t-nyB').innerText = data[d].nyB;document.getElementById('t-nyI').innerText = data[d].nyI;document.getElementById('t-glB').innerText = data[d].glB;document.getElementById('t-glI').innerText = data[d].glI;document.getElementById('t-fB').innerText = data[d].fB;document.getElementById('t-fBt').innerText = data[d].fBt;document.getElementById('t-pB').innerText = data[d].pB;document.getElementById('t-pBt').innerText = data[d].pBt;if(d == 'de') {document.getElementById('isim').placeholder = "Ihr Name";document.getElementById('eposta').placeholder = "E-Mail Adresse";document.getElementById('sifreGiris').placeholder = "Admin-Passwort";} else if(d == 'en') {document.getElementById('isim').placeholder = "Your Name";document.getElementById('eposta').placeholder = "Email Address";document.getElementById('sifreGiris').placeholder = "Admin Password";} else {document.getElementById('isim').placeholder = "Adınız Soyadınız";document.getElementById('eposta').placeholder = "E-posta Adresiniz";document.getElementById('sifreGiris').placeholder = "Yönetici Şifresi";}document.getElementById('btn-tr').className = d == 'tr' ? 'aktif' : '';document.getElementById('btn-de').className = d == 'de' ? 'aktif' : '';document.getElementById('btn-en').className = d == 'en' ? 'aktif' : '';}function save() {var i = document.getElementById('isim').value;var e = document.getElementById('eposta').value;if(i == "" || e == "") {alert(lang=='de'?'Bitte ausfüllen!':(lang=='en'?'Please fill all fields!':'Lütfen tüm alanları doldurun!'));} else {alert((lang=='de'?'Vielen Dank ': (lang=='en'?'Thank you ':'Teşekkürler ')) + i);}}function check() {var g = document.getElementById('sifreGiris').value;if(g == "2026") {document.getElementById('gizliKutu').style.display = "block";alert(lang=='de'?'Erfolgreich!':(lang=='en'?'Success!':'Giriş Başarılı!'));} else {document.getElementById('gizliKutu').style.display = "none";alert('❌');}}
+  <script>
+    var sözlük = {
+      tr: {
+        b: "Geleceğin Yazılım Dünyası",
+        sl: "NextGen ile oyun ve yapay zeka fikirlerinizi kodla gerçeğe dönüştürüyoruz.",
+        wB: "🌐 Web", wD: "Modern, hızlı ve güvenli web mimarileri inşa ediyoruz.",
+        mB: "📱 Mobil", mD: "iOS ve Android için kusursuz uygulamalar üretiyoruz.",
+        gB: "🎮 Oyun", gD: "Gelecek nesil, sürükleyici oyun dünyaları tasarlıyoruz.",
+        nyB: "Ne Yapıyoruz?", nyI: "NextGen AI Studios olarak, dijital dünyanın sınırlarını yeniden çiziyoruz. Gelişmiş yapay zeka entegrasyonları, yüksek performanslı web mimarileri ve kullanıcıyı içine çeken mobil oyun ekosistemleri geliştiriyoruz. Fikirleri sadece koda dökmüyor, onlara küresel ölçekte değer katıyoruz.",
+        glB: "Gelecekte Bizi Ne Bekliyor?", glI: "Gelecek, yapay zeka ile insan zekasının kusursuz uyumu üzerine kurulacak. NextGen olarak hedefimiz; yapay zeka tabanlı otomasyon sistemleri ve sınırları zorlayan fütüristik yazılım çözümleriyle sektöre liderlik etmek. Yarının teknolojisini bugünden inşa ediyor, küresel pazarda kalıcı izler bırakmayı hedefliyoruz.",
+        fB: "Bizimle Çalışın", fBt: "Kayıt Ol", pB: "🔒 Kurucu Özel Paneli", pBt: "Sisteme Giriş Yap",
+        bH: "Lütfen tüm alanları doldurun!", ts: "Teşekkürler ", kB: "! Kaydınız başarıyla alındı. Sizinle iletişime geçeceğiz.",
+        sB: "Giriş Başarılı, Sayın Yönetici!", sH: "Hatalı Şifre! ❌"
+      },
+      de: {
+        b: "Die Softwarewelt der Zukunft",
+        sl: "Mit NextGen verwandeln wir Ihre Spiel- und KI-Ideen in Code.",
+        wB: "🌐 Web", wD: "Wir bauen moderne, schnelle und sichere Webarchitekturen.",
+        mB: "📱 Mobil", mD: "Wir erstellen nahtlose Apps für iOS und Android.",
+        gB: "🎮 Spiele", gD: "Wir entwerfen immersive Spielewelten der nächsten Generation.",
+        nyB: "Was wir tun?", nyI: "Als NextGen AI Studios definieren wir die Grenzen der digitalen Welt neu. Wir entwickeln fortschrittliche KI-Integrationen, leistungsstarke Web-Architekturen und immersive mobile Spiele-Ökosysteme. Wir verwandeln Ideen nicht nur in Code, sondern schaffen globalen Mehrwert.",
+        glB: "Was erwartet uns in der Zukunft?", glI: "Die Zukunft basiert auf der perfekten Harmonie zwischen KI und menschlicher Intelligenz. Unser Ziel bei NextGen ist es, die Branche mit KI-basierten Automatisierungssystemen und zukunftsweisenden Softwarelösungen anzuführen. Wir bauen die Technologie von morgen schon heute, mit dem Ziel, bleibende Spuren auf dem globalen Markt zu hinterlassen.",
+        fB: "Arbeiten Sie mit uns", fBt: "Registrieren", pB: "🔒 Gründer-Sonderpanel", pBt: "Einloggen",
+        bH: "Bitte füllen Sie alle Felder aus!", ts: "Vielen Dank ", kB: "! Ihre Registrierung war erfolgreich. Wir werden uns melden.",
+        sB: "Login erfolgreich, Herr Geschäftsführer!", sH: "Falsches Passwort! ❌"
+      },
+      en: {
+        b: "The Software World of the Future",
+        sl: "With NextGen, we turn your game and AI ideas into code.",
+        wB: "🌐 Web", wD: "We build modern, fast, and secure web architectures.",
+        mB: "📱 Mobile", mD: "We create flawless applications for iOS and Android.",
+        gB: "🎮 Gaming", gD: "We design next-generation, immersive gaming worlds.",
+        nyB: "What We Do?", nyI: "At NextGen AI Studios, we redefine the boundaries of the digital world. We develop advanced AI integrations, high-performance web architectures, and immersive mobile gaming ecosystems. We don't just turn ideas into code; we engineer global value.",
+        glB: "What Awaits Us in the Future?", glI: "The future is built on the seamless harmony between AI and human intelligence. Our goal at NextGen is to lead the industry with AI-driven automation systems and pioneering software solutions. We are building tomorrow's technology today, aiming to leave a permanent mark on the global market.",
+        fB: "Work With Us", fBt: "Sign Up", pB: "🔒 Founder Special Panel", pBt: "Log In",
+        bH: "Please fill in all fields!", ts: "Thank you ", kB: "! Your registration was successful. We will contact you.",
+        sB: "Login Successful, Welcome CEO!", sH: "Incorrect Password! ❌"
+      }
+    };
+
+    var aktifDil = 'tr';
+
+    function diliDegistir(d) {
+      aktifDil = d;
+      document.getElementById('txt-baslik').innerText = sözlük[d].b;
+      document.getElementById('txt-slogan').innerText = sözlük[d].sl;
+      document.getElementById('lbl-web-baslik').innerText = sözlük[d].wB;
+      document.getElementById('lbl-web-desc').innerText = sözlük[d].wD;
+      document.getElementById('lbl-app-baslik').innerText = sözlük[d].mB;
+      document.getElementById('lbl-app-desc').innerText = sözlük[d].mD;
+      document.getElementById('lbl-game-baslik').innerText = sözlük[d].gB;
+      document.getElementById('lbl-game-desc').innerText = sözlük[d].gD;
+      document.getElementById('txt-neyapiyoruz-baslik').innerText = sözlük[d].nyB;
+      document.getElementById('txt-neyapiyoruz-icerik').innerText = sözlük[d].nyI;
+      document.getElementById('txt-gelecek-baslik').innerText = sözlük[d].glB;
+      document.getElementById('txt-gelecek-icerik').innerText = sözlük[d].glI;
+      document.getElementById('txt-form-baslik').innerText = sözlük[d].fB;
+      document.getElementById('txt-form-buton').innerText = sözlük[d].fBt;
+      document.getElementById('txt-panel-baslik').innerText = sözlük[d].pB;
+      document.getElementById('txt-panel-buton').innerText = sözlük[d].pBt;
+
+      if(d == 'de') {
+        document.getElementById('isim').placeholder = "Ihr Name";
+        document.getElementById('eposta').placeholder = "E-Mail Adresse";
+        document.getElementById('sifreGiris').placeholder = "Admin-Passwort";
+      } else if(d == 'en') {
+        document.getElementById('isim').placeholder = "Your Name";
+        document.getElementById('eposta').placeholder = "Email Address";
+        document.getElementById('sifreGiris').placeholder = "Admin Password";
+      } else {
+        document.getElementById('isim').placeholder = "Adınız Soyadınız";
+        document.getElementById('eposta').placeholder = "E-posta Adresiniz";
+        document.getElementById('sifreGiris').placeholder = "Yönetici Şifresi";
+      }
+
+      document.getElementById('btn-tr').className = d == 'tr' ? 'aktif' : '';
+      document.getElementById('btn-de').className = d == 'de' ? 'aktif' : '';
+      document.getElementById('btn-en').className = d == 'en' ? 'aktif' : '';
+    }
+
+    function kaydet() {
+      var i = document.getElementById('isim').value;
+      var e = document.getElementById('eposta').value;
+      if(i == "" || e == "") {
+        alert(sözlük[aktifDil].bH);
+      } else {
+        alert(sözlük[aktifDil].ts + i + sözlük[aktifDil].kB);
+      }
+    }
+
+    function sifreyiKontrolEt() {
+      var g = document.getElementById('sifreGiris').value;
+      if(g == "2026") {
+        document.getElementById('gizliKutu').style.display = "block";
+        alert(sözlük[aktifDil].sB);
+      } else {
+        document.getElementById('gizliKutu').style.display = "none";
+        alert(sözlük[aktifDil].sH);
+      }
+    }
+  </script>
+
+</body>
+</html>
